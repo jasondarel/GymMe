@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminNav.master.cs" Inherits="LAB_PSD_Project.View.Admin.AdminNav" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Button ID="Home" runat="server" Text="Home" OnClick="Home_Click" />
+            <asp:Button ID="HistoryBtn" runat="server" Text="History" OnClick="HistoryBtn_Click" />
+            <asp:Button ID="ManageSupplementBtn" runat="server" Text="Manage Supplement" OnClick="ManageSupplementBtn_Click" />
+            <asp:Button ID="OrderQueueBtn" runat="server" Text="Order Queue" OnClick="OrderQueueBtn_Click" />
+            <asp:Button ID="TransactionReportBtn" runat="server" Text="Transaction Report" OnClick="TransactionReportBtn_Click" />
+            <asp:Button ID="ProfileBtn" runat="server" Text="Profile" OnClick="ProfileBtn_Click" />
+            <asp:Button ID="LogoutBtn" runat="server" Text="Logout" OnClick="LogoutBtn_Click" />
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
